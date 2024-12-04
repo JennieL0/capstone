@@ -69,7 +69,9 @@ It isolates data points through recursive partitioning, with anomalies requiring
 During inference, the model computes anomaly scores for unseen sector returns, dynamically adjusting thresholds based on volatility regimes.
             
 ##### Mahalanobis distance
-Placeholder
+The Mahalanobis distance identifies anomalies by measuring how far a stock's return deviate from the mean of its sector while accounting for the covariance structure of return.
+It considers the correlation between variables and scales them by their variability.
+
             
 ##### Statistics   
 The main idea of the model is that given the current segment, if the new incoming point is from the same distribution, 
